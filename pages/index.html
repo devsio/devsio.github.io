@@ -6,8 +6,8 @@ title: Pages
 <div class="posts">
   {% for post in site.pages %}
   {{post.url}}
-  -i {{post.url.index("pages")}}
-  -m {{post.url.match(/pages/)}}
+  -i {{post.url.index("pages")>=0}}
+  -m {{post.url.match(/pages/)>=0}}
   {% if post.url.index("pages")>=0 %}
   <div class="post">
     <h1 class="post-title">
