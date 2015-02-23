@@ -5,6 +5,7 @@ title: Pages
 
 <div class="posts">
   {% for post in site.pages %}
+  {% if post.title.match(/^g_/) %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -14,6 +15,7 @@ title: Pages
 
     {{ post.content }}
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
