@@ -9,11 +9,11 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               gorank
+title:               devsio
 tagline:             '.github.io'
 description:         ''
-url:                 http://gorank.github.io/
-baseurl:             http://gorank.github.io/
+url:                 http://devsio.github.io/
+baseurl:             http://devsio.github.io/
 paginate:            5
 
 # About/contact
