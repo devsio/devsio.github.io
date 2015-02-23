@@ -2,7 +2,7 @@
 layout: page
 title: Java
 links: true
-intro: Some official links related to Java
+intro: Official links related to Java
 ---
 
 *[Standard Edition](http://docs.oracle.com/javase/tutorial/)
