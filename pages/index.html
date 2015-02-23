@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Pages
+ispage: true
 ---
 
 <div class="posts">
@@ -8,6 +9,7 @@ title: Pages
   {{post.url}}
   -i {{post.url.index("pages")>=0}}
   -m {{post.url.match(/pages/)>=0}}
+  -p {{post.ispage}}
   {% if post.url.index("pages")>=0 %}
   <div class="post">
     <h1 class="post-title">
