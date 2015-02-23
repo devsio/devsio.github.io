@@ -4,8 +4,8 @@ title: Links
 navigation: show
 ---
 <div class="posts">
-{% for post in site.links %}
-
+{% for post in site.pages %}
+{% if post.links %}
 <div class="post">
 <h2 class="post-title">
 <a href="{{ post.url }}">
@@ -14,6 +14,6 @@ navigation: show
 </h2>
 {{ post.intro }}
 </div>
-
+{% endif %}
 {% endfor %}
 </div>
