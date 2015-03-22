@@ -100,16 +100,18 @@ The pom should roughly be simmilar to the following example. But just for the ne
 {% endhighlight %} 
 
 
-First items define projects groupId, artifactId and version. The packaging property defines that our deliverable will be a jar file. 
-Properties node can be used to define some propertis that could be reused afterwards. 
-The build part is used to tweak the building process of the project. For the current example we added maven-compiler-plugin in order to direct the maven to use Java 8. 
-And last but not least the dependencies part. It's arguably one of the major reasons to use maven. Dependencies part defines list of libraries are needed for the services of the current project. Fortunately Maven is here to provide them for us. 
+First items define projects groupId, artifactId and version. The packaging property defines that our deliverable will be a jar file.  
+Properties node can be used to define some propertis that could be reused afterwards.  
+The build part is used to tweak the building process of the project. For the current example we added maven-compiler-plugin in order to direct the maven to use Java 8.  
 
-Building 
+And last but not least the dependencies part. It's arguably one of the major reasons to use maven. Dependencies part defines list of libraries are needed for the services of the current project. Fortunately Maven is here to provide them for us.  
+
+Building  
 ...
-Executing
+Executing  
 ...
 
-For more info on the Maven itself you can visit our page [TODO: Maven Concepts]()  
+
+For more info on the Maven itself you can visit our page [TODO: Maven Concepts]()   
 
 Source can be fetched from [samples/maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld)
