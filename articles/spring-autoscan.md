@@ -12,8 +12,8 @@ Source can be fetched from [samples/spring-autoscan](https://github.com/devsio/s
 
 Prerequirements  
 
-* Knowledge to setup [simple maven project](maven-helloworld)  
-* Simple understanding of [spring concepts](spring-concepts)  
+* Knowledge to setup [simple maven project](/articles/maven-helloworld)  
+* Simple understanding of [spring concepts](/articles/spring-concepts)  
 
 
 This example will use Maven. You can use Simple Maven Project as a starting point. 
