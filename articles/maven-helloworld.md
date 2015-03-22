@@ -5,17 +5,15 @@ ispage: true
 ---
 
 
-The goal of this article is to demonstrate how to setup a simple maven project in eclipse. 
-For More info about maven itself please check [TODO: Maven Concepts](). 
-The project source is provided at [maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld)
+The goal of this article is to demonstrate how to setup a simple maven project in eclipse.  
+For More info about maven itself please check [TODO: Maven Concepts]().  
+The project source is provided at [maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld) 
 
 
 Prerequirements:
 
 * Installed Maven. If you havent installed Maven yet check [TODO: Installing Maven]
-* 
 * Installed Eclipse. 
-* 
 * Installed Maven plugin in Eclipse. Check [TODO: Installing Maven plugin].
 
 In order to create new project select File -> New -> Maven Project or File -> New -> Other --> Maven -> Maven Project. 
