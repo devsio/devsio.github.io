@@ -10,6 +10,7 @@ However spring configuration can be an overhead by itself. In this example we wi
 Source can be fetched from [samples/spring-autoscan](https://github.com/devsio/samples/tree/master/spring-autoscan)
 
 Prerequirements  
+
 * Knowledge to setup [simple maven project](maven-helloworld)  
 * Simple understanding of [spring concepts](spring-concepts)  
 
