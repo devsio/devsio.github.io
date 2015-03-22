@@ -11,24 +11,31 @@ The project source is provided at [samples/maven-helloworld](https://github.com/
 
 Prerequirements:
 
-* Installed Maven. If you havent installed Maven yet check [TODO: Installing Maven]
+* Installed Maven. If you havent installed Maven yet check [TODO: Installing Maven]()
 * Installed Eclipse. 
-* Installed Maven plugin in Eclipse. Check [TODO: Installing Maven plugin].
+* Installed Maven plugin in Eclipse. Check [TODO: Installing Maven plugin]().
 
-In order to create new project select File -> New -> Maven Project or File -> New -> Other --> Maven -> Maven Project. 
-You should be asked to choose workspace location and whether you want to choose an archetype [TODO: Maven Concepts # Archetypes].
-In case you selected to choose an archtype you'll be offered a list of available archetypes. 
-maven-archtype-quickstart is best choice for simple maven powered java project. 
+In order to create new project select 
 
-In the next step you need to define an appropriate groupId, artifactId and version [TODO: Maven Concepts # terminology] for your application.
+File -> New -> Maven Project 
+or 
+File -> New -> Other --> Maven -> Maven Project. 
+
+You should be asked to choose workspace location and whether you want to choose an archetype [TODO: Maven Concepts#Archetypes](). 
+In case you selected to choose an archtype you'll be offered a list of available archetypes.  
+maven-archtype-quickstart is best choice for simple maven powered java project.  
+
+In the next step you need to define an appropriate groupId, artifactId and version [TODO: Maven Concepts#Terminology]() for your application.  
 For the sake of the sample lets enter
+{% highlight %}
  GroupId : io.devs.basic
  ArtifactId : helloworld
  Version: 0.0.1-SNAPSHOT
+{% endhighlight %}
 
-Afterwards Maven project should be generated. 
+Afterwards Maven project should be generated.  
 
-Please note the following structure
+Please note the following structure  
 
 {% highlight yaml %}
 - src
