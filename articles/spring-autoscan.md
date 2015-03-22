@@ -2,7 +2,8 @@
 layout: page
 title: Spring Component Scan
 ispage: true
-intro: In this article we cover automatic component scan in Spring
+intro: Spring approach to define beans via configuration is nice approach to skip code boilerplate and configure the beans implicitly. However spring configuration can be an overhead by itself. In this example we will analyze some use cases where single bean needs to be created of an instance and bean dependencies can be wired implicitly without spring configuration. 
+
 ---
 
 Spring approach to define beans via [configuration](TODO: link to basic concepts) is nice approach to skip code boilerplate and configure the beans implicitly.
