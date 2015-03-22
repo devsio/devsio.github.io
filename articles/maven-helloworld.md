@@ -42,7 +42,7 @@ src folder contains the source code of the project. target will contain executab
 
 The pom should roughly be simmilar to the following example. But just for the needs of this tutorial you can update to the following content
 
-
+{% highlight xml %} 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -87,7 +87,7 @@ The pom should roughly be simmilar to the following example. But just for the ne
 		</dependency>
 	</dependencies>
 </project>
-
+{% endhighlight %} 
 
 
 First items define projects groupId, artifactId and version. The packaging property defines that our deliverable will be a jar file. 
