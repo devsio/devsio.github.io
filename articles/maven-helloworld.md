@@ -21,11 +21,11 @@ In order to create new project select
 or  
 *File -> New -> Other --> Maven -> Maven Project*   
 
-You should be asked to choose workspace location and whether you want to choose an archetype [TODO: Maven Concepts#Archetypes](). 
+You should be asked to choose workspace location and whether you want to choose an [archetype](TODO: Maven Concepts#Archetypes). 
 In case you selected to choose an archtype you'll be offered a list of available archetypes.  
 maven-archtype-quickstart is best choice for simple maven powered java project.  
 
-In the next step you need to define an appropriate groupId, artifactId and version [TODO: Maven Concepts#Terminology]() for your application.  
+In the next step you need to define an appropriate [groupId, artifactId and version](TODO: Maven Concepts#Terminology) for your application.  
 For the sake of the sample lets enter
 
 {% highlight yaml %}
