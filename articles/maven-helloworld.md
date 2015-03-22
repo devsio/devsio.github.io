@@ -2,6 +2,7 @@
 layout: page
 title: Simple Maven Project
 ispage: true
+intro: The goal of this article is to demonstrate how to setup a simple maven project in eclipse.
 ---
 
 
