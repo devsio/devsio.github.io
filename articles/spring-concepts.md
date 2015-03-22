@@ -10,7 +10,8 @@ In recent years Spring became the monster it was fighting against. We will cover
 Source can be fetched from [samples/spring-core](https://github.com/devsio/samples/tree/master/spring-core)
 
 Prerequirements 
-*Knowledge to setup [simple maven project](maven-helloworld)
+
+*Knowledge to setup [simple maven project](/articles/maven-helloworld)
 
 
 This example will use Maven. You can use Simple Maven Project as a starting point. 
