@@ -7,8 +7,7 @@ ispage: true
 
 The goal of this article is to demonstrate how to setup a simple maven project in eclipse.  
 For More info about maven itself please check [TODO: Maven Concepts]().  
-The project source is provided at [maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld) 
-
+The project source is provided at [samples/maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld) 
 
 Prerequirements:
 
@@ -30,6 +29,8 @@ For the sake of the sample lets enter
 Afterwards Maven project should be generated. 
 
 Please note the following structure
+
+{% highlight yaml %}
 - src
   - main
     - java
@@ -37,6 +38,7 @@ Please note the following structure
     - java
 - target
 - pom.xml
+{% endhiglight %}
 
 src folder contains the source code of the project. target will contain executables that will be built and pom.xml configures the project.
 
@@ -100,7 +102,6 @@ Building
 Executing
 ...
 
-For more info on the Maven itself you can visit our page ~~[Maven Concepts]()~~
+For more info on the Maven itself you can visit our page [TODO: Maven Concepts]()  
 
-
-Source can be fetched from [https://github.com/devsio/samples/tree/master/helloworld]
+Source can be fetched from [samples/maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld)
