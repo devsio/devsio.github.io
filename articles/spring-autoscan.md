@@ -2,6 +2,7 @@
 layout: page
 title: Spring Component Scan
 ispage: true
+intro: In this article we cover automatic component scan in Spring
 ---
 
 Spring approach to define beans via [configuration](TODO: link to basic concepts) is nice approach to skip code boilerplate and configure the beans implicitly.
