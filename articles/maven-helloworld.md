@@ -38,7 +38,7 @@ Please note the following structure
     - java
 - target
 - pom.xml
-{% endhiglight %}
+{% endhighlight %}
 
 src folder contains the source code of the project. target will contain executables that will be built and pom.xml configures the project.
 
