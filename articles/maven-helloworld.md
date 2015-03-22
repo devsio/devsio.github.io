@@ -27,7 +27,8 @@ maven-archtype-quickstart is best choice for simple maven powered java project.
 
 In the next step you need to define an appropriate groupId, artifactId and version [TODO: Maven Concepts#Terminology]() for your application.  
 For the sake of the sample lets enter
-{% highlight %}
+
+{% highlight yaml %}
  GroupId : io.devs.basic
  ArtifactId : helloworld
  Version: 0.0.1-SNAPSHOT
