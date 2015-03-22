@@ -13,8 +13,11 @@ The project source is provided at [maven-helloworld](https://github.com/devsio/s
 
 
 Prerequirements:
+
 * Installed Maven. If you havent installed Maven yet check [TODO: Installing Maven]
+* 
 * Installed Eclipse. 
+* 
 * Installed Maven plugin in Eclipse. Check [TODO: Installing Maven plugin].
 
 In order to create new project select File -> New -> Maven Project or File -> New -> Other --> Maven -> Maven Project. 
