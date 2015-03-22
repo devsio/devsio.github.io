@@ -17,9 +17,9 @@ Prerequirements:
 
 In order to create new project select 
 
-File -> New -> Maven Project 
-or 
-File -> New -> Other --> Maven -> Maven Project. 
+File -> New -> Maven Project   
+or  
+File -> New -> Other --> Maven -> Maven Project.   
 
 You should be asked to choose workspace location and whether you want to choose an archetype [TODO: Maven Concepts#Archetypes](). 
 In case you selected to choose an archtype you'll be offered a list of available archetypes.  
