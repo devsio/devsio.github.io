@@ -7,7 +7,7 @@ intro: Spring in it's core is a dependency injection framework. However, as time
 
 
 
-Spring in it's core is a dependency injection framework. However, as time goes by, spring includes many other subprojects that are targeting to solve different problems. Spring MVC is such example. Its mission is to provide powerful implementation of the Model View Controller architectural pattern.  
+Spring in it's core, is a dependency injection framework. However, as time goes by, spring includes many other subprojects that are targeting to solve different problems. Spring MVC is such example. Its mission is to provide powerful implementation of the Model View Controller architectural pattern.  
 This article is about to help you get started with Spring MVC and guide you to setup your first Spring MVC application.
 
 Source can be fetched from [samples/spring-mvc][https://github.com/devsio/samples/tree/master/spring-mvc]
