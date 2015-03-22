@@ -29,9 +29,9 @@ In the next step you need to define an appropriate groupId, artifactId and versi
 For the sake of the sample lets enter
 
 {% highlight yaml %}
- GroupId : io.devs.basic
- ArtifactId : helloworld
- Version: 0.0.1-SNAPSHOT
+GroupId : io.devs.basic
+ArtifactId : helloworld
+Version: 0.0.1-SNAPSHOT
 {% endhighlight %}
 
 Afterwards Maven project should be generated.  
