@@ -2,7 +2,7 @@
 layout: page
 title: Spring Basic Concepts
 ispage: true
-intro: This article is targeted to audience that is trying to get started with Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create simple spring application.
+intro: This article is targeted to audience that is trying to get started with Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create simple spring application. In recent years Spring became the monster it was fighting against. We will cover none of Springs complex features in this article. The only goal will be to cover Dependency Injection pattern and see it in action using spring core.
 ---
 
 This article is targeted to audience that is trying to get started with Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create simple spring application.  
