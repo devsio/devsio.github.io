@@ -4,11 +4,9 @@ title: Simple Maven Project
 ispage: true
 ---
 
-Simple Maven Project 
-====================
 
 The goal of this article is to demonstrate how to setup a simple maven project in eclipse. 
-For More info about maven itself please check ~~TODO: Maven Concepts~~. 
+For More info about maven itself please check [TODO: Maven Concepts](). 
 The project source is provided at [maven-helloworld](https://github.com/devsio/samples/tree/master/helloworld)
 
 
