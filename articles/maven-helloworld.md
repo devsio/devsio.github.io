@@ -49,9 +49,9 @@ Please note the following structure
 - pom.xml
 {% endhighlight %}
 
-src folder contains the source code of the project. target will contain executables that will be built and pom.xml configures the project.
+The **src** folder contains the source code of the project. The **target** will contain executables that will be built and **pom.xml** configures the project.
 
-The pom should roughly be simmilar to the following example. But just for the needs of this tutorial you can update to the following content
+The **pom** should roughly be similar to the following example. But just for the needs of this tutorial you can update to the following content:
 
 {% highlight xml %} 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -101,11 +101,11 @@ The pom should roughly be simmilar to the following example. But just for the ne
 {% endhighlight %} 
 
 
-First items define projects groupId, artifactId and version. The packaging property defines that our deliverable will be a jar file.  
+First items define projects groupId, artifactId and version. The packaging property defines that our deliverable will be a **jar** file.  
 Properties node can be used to define some propertis that could be reused afterwards.  
-The build part is used to tweak the building process of the project. For the current example we added maven-compiler-plugin in order to direct the maven to use Java 8.  
+The build part is used to tweak the building process of the project. For the current example we've added *maven-compiler-plugin* in order to direct the maven to use Java 8.  
 
-And last but not least the dependencies part. It's arguably one of the major reasons to use maven. Dependencies part defines list of libraries are needed for the services of the current project. Fortunately Maven is here to provide them for us.  
+And last but not least the dependencies part. It's arguably one of the major reasons to use Maven. Dependencies part defines list of libraries are needed for the services of the current project. Fortunately Maven is here to provide them for us.  
 
 Building...  
 Executing...  
