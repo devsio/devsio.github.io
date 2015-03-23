@@ -5,12 +5,12 @@ ispage: true
 intro: This article is targeted to audience that is trying to get started with Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create simple spring application. In recent years Spring became the monster it was fighting against. We will cover none of Springs complex features in this article. The only goal will be to cover Dependency Injection pattern and see it in action using spring core.
 ---
 
-This article is targeted to audience that is trying to get started with Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create simple spring application.  
-In recent years Spring became the monster it was fighting against. We will cover none of Springs complex features in this article. The only goal will be to cover [TODO: Dependency Injection](todo) pattern and see it in action using spring core.
+This article is targeted for an audience that is trying to get started with the Spring Framework. The goal is to explain the basic concepts that Spring is built upon and guide the user to create a simple Spring application.  
+In recent years Spring became the monster it was fighting against. We will cover none of Springs complex features in this article. The only goal will be to cover the [TODO: Dependency Injection](todo) pattern and see it in action using spring core.
 
 Source can be fetched from [samples/spring-core](https://github.com/devsio/samples/tree/master/spring-core)
 
-Prerequirements 
+Pre-requirements 
 
 *Knowledge to setup [simple maven project](/articles/maven-helloworld)
 
@@ -18,7 +18,7 @@ Prerequirements
 This example will use Maven. You can use Simple Maven Project as a starting point. 
 
 First, in order to use Spring we will need to include it in our pom file. 
-Following dependencies should be added:
+The following dependencies should be added:
 
 {% highlight xml %}
 		<dependency>
@@ -33,9 +33,9 @@ Following dependencies should be added:
 		</dependency>
 {% endhighlight %}
 
-This will allow us to use spring framework. 
+This will allow us to use Spring framework. 
 Next step is to add spring-context.xml file under the main resources.
-The spring context file is xml format. This is slightly old format that has been enhanced through the years, but we use it because it is a good starting point to explain dependency injection with spring.
+The spring context file is xml format. This is slightly old format that has been enhanced through the years, but we use it because it is a good starting point to explain dependency injection with Spring.
 
 
 {% highlight xml %}
@@ -66,7 +66,7 @@ The spring context file is xml format. This is slightly old format that has been
 {% endhighlight %}
 
 The goal of the context file is to define the spring context. You can imagine the spring context as a repository of already created objects ready to be used.
-That is exactly what our spring context defines. It is consisted of beans xml root element, that defines two beans of type Person. Both beans can be distinguished according to their id. This means that once our spring context is created it will contain two classes of type Person. 
+That is exactly what our spring context defines. It consists of beans xml root element, that defines two beans of type Person. Both beans can be distinguished according to their id. This means that once our spring context is created it will contain two classes of type Person. 
 Lets implement our class Person in order to proceed. 
 
 
@@ -112,12 +112,12 @@ public class Person {
 
 {% endhighlight %}
 
-The class is a plain java object defining several simple fields. Those fields are defined via property nodes in the spring context xml.
-firstName property will be populated with provided value and property kids will be populated with a list of the objects that are provided. 
+The class is a plain Java object defining several simple fields. Those fields are defined via property nodes in the spring context xml.
+The firstName property will be populated with a provided value and the property kids will be populated with a list of the objects that are provided. 
 In this example we can notice two approaches to assign a value to a field. First one is to directly assign value to the field and the second approach is to assign another object via reference. Such example is shown where the object with id Bart is added as an element in the list of kids for Homer.
 
 Having said how Spring wires the beans defined in the context we need to show how can we read this spring context configuration, initialize appropriate spring context and use it.
-We will initialize the spring context in the main java method. Following is the code that does the magic:
+We will initialize the spring context in the main Java method. Following is the code that does the magic:
 
 {% highlight java %}
 package io.devs.spring.springcore;
@@ -145,9 +145,9 @@ public class Main {
 {% endhighlight %}
 
 First important thing to notice is ClassPathXmlApplicationContext. This is a class that implements ApplicationContext interface and uses configuration provided in the classpath in order to create the context. Our spring context configuration is such configuration that is provided in the classpath. 
-Next line shows how to fetch the bean out from the context. We use the context.getBean method in order to achieve this. 
+The next line shows how to fetch the bean out from the context. We use the context.getBean method in order to achieve this. 
 So in our example we fetch the bean with id homer. The one that internally has a reference to the other bean named bart.
-Please note that getBean method has several variations allowing the user to query the context for a bean accordin to its id, class type, etc. 
+Please note that getBean method has several variations allowing the user to query the context for a bean according to its id, class type, etc. 
 The system out should print the following line in order to confirm that everything was wired as expected.
 
 *Homer Simpson [Bart Simpson ]*
