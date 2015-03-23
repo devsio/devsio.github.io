@@ -6,18 +6,18 @@ intro: Spring MVC is one of the most popular MVC frameworks, Thymeleaf on the ot
 ---
 
 Spring MVC is one of the most popular MVC frameworks, Thymeleaf on the other hand is becoming one of the most popular templating frameworks at the moment. 
-The goal of this article is to guide you in order to set up thymeleaf as a rendering engine for your Spring MVC web application. 
+The goal of this article is to guide you in order to set up Thymeleaf as a rendering engine for your Spring MVC web application. 
 
 Source can be fetched from [samples/spring-mvc][https://github.com/devsio/samples/tree/master/spring-thymeleaf]
 
-Prerequirements  
+Pre-requirements  
 
 * Knowledge to setup [Simple Maven Project](maven-helloworld)  
 * Understanding of [Spring concepts](/articles/spring-concepts) and [spring-autoscan](/articles/spring-autoscan)
 * Understanding of [Model View Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) 
 * Understanding of [Spring MVC](/articles/spring-mvc)
 
-The structure of the project is generally the same as the one we've shown in the [Spring MVC](/articles/spring-mvc). So if want to setup Spring MVC application please take a look at that article. This article on the other hand will point out only the differences that should be made in your project in order to use Thymeleaf instead of JSP.
+The structure of the project is generally the same as the one we've shown in the [Spring MVC](/articles/spring-mvc). So if you want to setup Spring MVC application please take a look at that article. This article on the other hand will point out only the changes that should be made in your project in order to use Thymeleaf instead of JSP.
 
 First of all we need to include appropriate Thymeleaf libraries:
 
@@ -37,7 +37,7 @@ First of all we need to include appropriate Thymeleaf libraries:
 {% endhighlight %}
 
 
-After including thymeleaf libraries we need to switch the Resolver in the Spring configuration. 
+After including the Thymeleaf libraries we need to switch the Resolver in the Spring configuration. 
 In order to configure Thymeleaf following entries should be added to the spring config
 
 {% highlight xml %}
@@ -58,9 +58,9 @@ In order to configure Thymeleaf following entries should be added to the spring 
 
 {% endhighlight %}
 
-This means that templates folder under WEB-INF will contain our thymeleaf templates and they will have .html suffix.
+This means that templates folder under WEB-INF will contain our Thymeleaf templates and they will have .html suffix.
 
-And finally, we can add some thymeleaf template to test if our configuration works.
+And finally, we can add some Thymeleaf template to test if our configuration works.
 
 {% highlight jsp %}
 <!DOCTYPE html>
