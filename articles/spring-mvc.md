@@ -7,19 +7,19 @@ intro: Spring in it's core is a dependency injection framework. However, as time
 
 
 
-Spring in it's core, is a dependency injection framework. However, as time goes by, spring includes many other subprojects that are targeting to solve different problems. Spring MVC is such example. Its mission is to provide powerful implementation of the Model View Controller architectural pattern.  
+Spring in it's core, is a dependency injection framework. However, as time goes by, Spring includes many other subprojects that are targeting to solve different problems. Spring MVC is such an example. Its mission is to provide powerful implementation of the Model View Controller architectural pattern.  
 This article is about to help you get started with Spring MVC and guide you to setup your first Spring MVC application.
 
 Source can be fetched from [samples/spring-mvc][https://github.com/devsio/samples/tree/master/spring-mvc]
 
-Prerequirements  
+Pre-requirements  
 
-* Knowledge to setup [simple maven project](maven-helloworld)  
-* Understanding of [spring concepts](/articles/spring-concepts) and [spring-autoscan](/articles/spring-autoscan)
+* Knowledge to setup [simple Maven project](maven-helloworld)  
+* Understanding of [Spring concepts](/articles/spring-concepts) and [spring-autoscan](/articles/spring-autoscan)
 * Understanding of [Model View Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) 
 
-As every other spring application Spring-MVC needs spring context. Unlike the other spring samples we've shown before, Spring-mvc sample will load its context on a different way. The difference is that Spring-MVC is not simple java console application, but web application. Web application has such feature that, instead of Main method, it has web application descriptor that tells the application server what to do with deployed web application.
-The idea here is that we will have to describe how the spring context will be loaded via web.xml. This will mean that web.xml will configure appropriate spring dispatcher and define which configuration to use during spring initialization. Following is web.xml sample 
+As every other Spring application Spring-MVC needs a Spring context. Unlike the other Spring samples we've shown before, Spring-MVC sample will load its context in a different way. The difference is that Spring-MVC is not a simple Java console application, but a web application. A web application has such a feature that, instead of a Main method, it has a web application descriptor that tells the application server what to do with the deployed web application.
+The idea here is that we will have to describe how the Spring context will be loaded via web.xml. This will mean that web.xml will configure appropriate Spring dispatcher and define which configuration to use during Spring initialization. Following there is a web.xml sample 
 
 {% highlight xml %}
 <web-app id="SpringMVCDemo" version="2.4"
@@ -51,7 +51,7 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 </web-app>
 {% endhighlight %}
 
-This configuration tells the application server to dispatch every request to the Springs DispatcherServlet which on th other hand is initialized with Spring context according to the configuration at /WEB-INF/dispatcher-servlet.xml.
+This configuration tells the application server to dispatch every request to the Springs DispatcherServlet which on the other hand is initialized with Spring context according to the configuration at /WEB-INF/dispatcher-servlet.xml.
 
 Now, lets take a look at the dispatcher-servlet.xml configuration
 
@@ -82,7 +82,7 @@ Now, lets take a look at the dispatcher-servlet.xml configuration
 </beans>
 {% endhighlight %}
 
-This basically means scan for spring components at defined base-package and create InternalResourceViewResolver. The goal of the autoscan will be to find our **controllers** and define appropriate resolver that will be able to find our view templates.
+This basically means, scan for Spring components at defined base-package and create InternalResourceViewResolver. The goal of the autoscan will be to find our **controllers** and define appropriate resolver that will be able to find our view templates.
 
 The autoscan should find our *HelloWorldController*. A Class that will take care for some of the requests, do some internal computation and figure out appropriate view for the request. Following is the source of our controller.
 
@@ -111,8 +111,8 @@ public class HelloWorldController {
 }
 {% endhighlight %}
 
-Please note the **@Controller** annotation. That basically means this class will be Controller and take care about some of the requests so spring needs to initialize it. **@RequestMapping** defines that annotated method will handle the requests sent to the mapping (in this case *"/hello"*).
-**@RequestParam** maps the *name* query parameter to the name parameter of the method, so spring will be able to provide it for us. Also the annotation defines that this parameter is not required and default value of "World" will be provided instead.  
+Please note the **@Controller** annotation. That basically means this class will be Controller and take care about some of the requests so Spring needs to initialize it. **@RequestMapping** defines that annotated method will handle the requests sent to the mapping (in this case *"/hello"*).
+**@RequestParam** maps the *name* query parameter to the name parameter of the method, so Spring will be able to provide it for us. Also the annotation defines that this parameter is not required and default value of "World" will be provided instead.  
 
 As you can notice the method is very simple. Its duty is only to populate the model object with the name parameter so it will be accessible from the template and to return the name of the **view** that will be rendered to the user. In this case *"helloworld"* template will be searched in the predefined location.
 
@@ -133,6 +133,6 @@ And finally the view. It is a simple jsp page. It uses the name parameter provid
 </html>
 {%  endhighlight %}
 
-This should be enough in order to create your first spring-mvc application. 
+This should be enough in order to create your first Spring-MVC application. 
 
 Source can be fetched from [samples/spring-mvc][https://github.com/devsio/samples/tree/master/spring-mvc]
