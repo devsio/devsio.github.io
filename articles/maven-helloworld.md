@@ -16,7 +16,7 @@ Prerequirements:
 * Installed Eclipse. 
 * Installed Maven plugin in Eclipse. Check [TODO: Installing Maven plugin]().
 
-In order to create new project select 
+In order to create a new project select 
 
 *File -> New -> Maven Project*   
 or  
