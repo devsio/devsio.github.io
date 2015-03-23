@@ -6,21 +6,21 @@ intro: Spring approach to define beans via configuration is nice approach to ski
 
 ---
 
-Spring approach to define beans via [configuration](TODO: link to basic concepts) is nice approach to skip code boilerplate and configure the beans implicitly.
-However spring configuration can be an overhead by itself. In this example we will analyze some use cases where single bean needs to be created of an instance and bean dependencies can be wired implicitly without spring configuration. 
+Spring approach to define beans via [configuration](TODO: link to basic concepts) is nice a approach to skip code boilerplate and configure the beans implicitly.
+However Spring configuration can be an overhead by itself. In this example we will analyze some use cases where a single bean needs to be created of an instance and bean dependencies can be wired implicitly without Spring configuration. 
 
 Source can be fetched from [samples/spring-autoscan](https://github.com/devsio/samples/tree/master/spring-autoscan)
 
-Prerequirements  
+Pre-requirements  
 
-* Knowledge to setup [simple maven project](/articles/maven-helloworld)  
-* Simple understanding of [spring concepts](/articles/spring-concepts)  
+* Knowledge to setup [simple Maven project](/articles/maven-helloworld)  
+* Simple understanding of [Spring concepts](/articles/spring-concepts)  
 
 
 This example will use Maven. You can use Simple Maven Project as a starting point. 
 
 First, in order to use Spring we will need to include it in our pom file. 
-Following dependencies should be added:
+The following dependencies should be added:
 
 {% highlight xml %}
 		<dependency>
@@ -35,7 +35,7 @@ Following dependencies should be added:
 		</dependency>
 {% endhighlight %}
 
-This will allow us to use spring framework. 
+This will allow us to use Spring framework. 
 Next step is to add **spring-context.xml** file under the main resources. Unlike [Spring simple project](/articles/spring-concepts) this spring context is way simpler.
 
 {% highlight xml %}
@@ -57,11 +57,11 @@ Next step is to add **spring-context.xml** file under the main resources. Unlike
 {% endhighlight %}
 
 This xml file also defines the spring context but with only one line. The idea is to allow the spring to scan our packages for potential beans. 
-In the sample via **component-scan** we tell spring which package containes our beans and should be scanned.
-Spring will scan povided package and will search for properly annotated classes. 
-**@Component** is the annotation that tells spring to instantiate an object out of that class. **@Component** annotation has several specializations (**@Service, @Repository, @Controller**) that can be considered as syntactic sugar at this point and think of them as they are annotated with **@Component**.
+In the sample via **component-scan** we tell Spring which package containes our beans and should be scanned.
+Spring will scan provided packages and will search for properly annotated classes. 
+**@Component** is the annotation that tells Spring to instantiate an object out of that class. **@Component** annotation has several specializations (**@Service, @Repository, @Controller**) that can be considered as syntactic sugar at this point and think of them as they are annotated with **@Component**.
 
-Following is sample **@Component** that will be instantiated via autoscan and be named *'componentX'*:
+Following there is a sample **@Component** that will be instantiated via autoscan and be named *'componentX'*:
 
 {% highlight java %}
 package io.devs.spring.spring_autoscan.components;
@@ -78,8 +78,8 @@ public class ComponentX {
 
 {% endhighlight %}
 
-Moreover we can also autowire dependencies between our instances. Actually whole point of using spring is about the dependency injection. 
-Following is another class that demonstrates how to inject our ComponentX into another instance:
+Moreover we can also autowire dependencies between our instances. Actually the whole point of using Spring is about the dependency injection. 
+Following there is another class that demonstrates how to inject our ComponentX into another instance:
 
 {% highlight java %}
 package io.devs.spring.spring_autoscan.services;
@@ -109,9 +109,9 @@ public class ServiceX {
 As you may have noticed, we've annotated the componentX field with **@Autowired**. 
 This means our *componentX* instance will be injected into this field and be available inside *ServiceX* instance.
 
-Another way to inject values is **@Value** annotation. It shows nothing more than simple inline assignment in this sample, but it can be very powerful when linked with some properties. 
+Another way to inject values is **@Value** annotation. It shows nothing more than a simple inline assignment in this sample, but it can be very powerful when linked with some properties. 
 
-Similar to the spring concepts example, we create context out of xml file provided in the classpath so we use largely same Main method.
+Similar to the spring concepts example, we create context out of xml file provided in the classpath so we use largely the same Main method.
 
 {% highlight java %}
 package io.devs.spring.spring_autoscan;
@@ -139,6 +139,6 @@ public class Main {
 }
 {% endhighlight %}
 
-As for now, we won't digg into details at this point. The idea of this article was to present the power of autoscan and not resolution details. This will be material for another article. 
+As for now, we won't digg into the details at this point. The idea of this article was to present the power of autoscan and not resolution details. This will be a material for another article. 
 
 Source can be fetched from [samples/spring-autoscan](https://github.com/devsio/samples/tree/master/spring-autoscan)
