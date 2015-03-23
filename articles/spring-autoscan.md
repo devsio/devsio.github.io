@@ -36,7 +36,7 @@ The following dependencies should be added:
 {% endhighlight %}
 
 This will allow us to use Spring framework. 
-Next step is to add **spring-context.xml** file under the main resources. Unlike [Spring simple project](/articles/spring-concepts) this spring context is way simpler.
+Next step is to add **spring-context.xml** file under the main resources. Unlike [Spring simple project](/articles/spring-concepts) this Spring context is way simpler.
 
 {% highlight xml %}
 
@@ -56,7 +56,7 @@ Next step is to add **spring-context.xml** file under the main resources. Unlike
 
 {% endhighlight %}
 
-This xml file also defines the spring context but with only one line. The idea is to allow the spring to scan our packages for potential beans. 
+This xml file also defines the Spring context but with only one line. The idea is to allow the Spring to scan our packages for potential beans. 
 In the sample via **component-scan** we tell Spring which package containes our beans and should be scanned.
 Spring will scan provided packages and will search for properly annotated classes. 
 **@Component** is the annotation that tells Spring to instantiate an object out of that class. **@Component** annotation has several specializations (**@Service, @Repository, @Controller**) that can be considered as syntactic sugar at this point and think of them as they are annotated with **@Component**.
@@ -111,7 +111,7 @@ This means our *componentX* instance will be injected into this field and be ava
 
 Another way to inject values is **@Value** annotation. It shows nothing more than a simple inline assignment in this sample, but it can be very powerful when linked with some properties. 
 
-Similar to the spring concepts example, we create context out of xml file provided in the classpath so we use largely the same Main method.
+Similar to the Spring concepts example, we create context out of xml file provided in the classpath so we use largely the same Main method.
 
 {% highlight java %}
 package io.devs.spring.spring_autoscan;
