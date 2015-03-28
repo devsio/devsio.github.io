@@ -16,6 +16,7 @@ Elastica.controller('elasticaController', ['elasticaService', '$scope', '$locati
         $scope.offset = 0;
 
         var paginationTriggered;
+	var defaultQuery = "techcrunch"; //TODO: change me
 
         //On search, reinitialize array, then perform search and load results
         $scope.search = function(m){
@@ -36,7 +37,8 @@ Elastica.controller('elasticaController', ['elasticaService', '$scope', '$locati
 
         //Load search results into array
         $scope.loadResults = function(m) {
-            results.search($scope.query, m, $scope.offset).then(function(a) {
+	    var query = $scope.query || defaultQuery;
+            results.search(query, m, $scope.offset).then(function(a) {
 
                 //Load results
                 var i = 0;
