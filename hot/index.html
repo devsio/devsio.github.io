@@ -20,6 +20,7 @@ title: Hot Topics
   <section class='results'>
     <p class='no-results' ng-show='!results.length && !loading'>No Results</p>
     <article class='result' ng-repeat='result in results track by $id(result)'>
+<span>{{result}}</span>
       <h2>{{result.title}}</h2>
       <p>{{result.author}}</p>
     </article>
