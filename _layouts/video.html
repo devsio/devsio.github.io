@@ -3,10 +3,9 @@ layout: default
 ---
 
 <div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <h1 class="page-title">{{ page.code }}</h1>
+  <a href="{{page.link}}"><h3 class="page-title">{{ page.title }}</h3></a>
   <iframe title="{{page.title}}" class="youtube-player" type="text/html" 
-src="http://www.youtube.com/embed/{{page.code}}"
+width="480" height="390" src="http://www.youtube.com/embed/{{page.code}}"
 frameborder="0" allowFullScreen></iframe>
   {{ content }}
   :)
