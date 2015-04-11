@@ -6,7 +6,9 @@ TESTING ONLY
 <br/>
 <div class="posts">
   {% for video in site.pages %}
-  {% if video.layout=="video" %}
+  :)
+  {{video.layout}}
+  {% if video.layout=='video' %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ video.link }}">
