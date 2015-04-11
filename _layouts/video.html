@@ -5,6 +5,9 @@ layout: default
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
   <h1 class="page-title">{{ page.code }}</h1>
+  <iframe title="{{page.title}}" class="youtube-player" type="text/html" 
+src="http://www.youtube.com/embed/{{page.code}}"
+frameborder="0" allowFullScreen></iframe>
   {{ content }}
-  :\
+  :)
 </div>
